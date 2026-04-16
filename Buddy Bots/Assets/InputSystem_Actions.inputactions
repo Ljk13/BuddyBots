@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -986,6 +987,65 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Building",
+            "id": "5fe42f11-a96a-4f4f-9e12-ebd19ed11027",
+            "actions": [
+                {
+                    "name": "BuildRotateCam",
+                    "type": "PassThrough",
+                    "id": "6732d5bb-b958-4c8b-9a20-687a4e4c21fa",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BuildRotateCamEnable",
+                    "type": "Button",
+                    "id": "494c51e8-843f-4b80-b272-80d92c6baee8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "274f2fb9-72ca-4f23-92ca-ae327403d982",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad;Joystick;XR",
+                    "action": "BuildRotateCam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5fba10b1-3929-4c5a-90b0-86d9370baac1",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse;Touch",
+                    "action": "BuildRotateCam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7cb4f1d8-3eb7-4417-8d04-e2de9996bd3c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse;Touch",
+                    "action": "BuildRotateCamEnable",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
